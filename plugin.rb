@@ -26,6 +26,8 @@ after_initialize do
   require_relative 'app/jobs/regular/blackroom_learning_reconcile_user'
   require_relative 'app/jobs/scheduled/blackroom_learning_reconcile_all'
   require_relative 'lib/blackroom_learning/callbacks'
+  require_relative 'lib/blackroom_learning/unique_post_recovery'
+  BlackroomLearning::UniquePostRecovery.install!
   BlackroomLearning::Callbacks.install!
   Discourse::Application.routes.append do
     mount ::BlackroomLearning::Engine, at: '/learning'

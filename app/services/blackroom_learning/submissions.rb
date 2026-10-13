@@ -109,7 +109,9 @@ module BlackroomLearning
         value = Integer(timing[key] || timing[key.to_sym] || 0, exception: false)
         [key.to_sym, (value || 0).clamp(0, 86_400_000)]
       end
-      result = ::NewPostManager.new(user, args.merge(context).merge(first_post_checks: true)).perform
+      result = UniquePostRecovery.with_submission(user, receipt, args) do
+        ::NewPostManager.new(user, args.merge(context).merge(first_post_checks: true)).perform
+      end
       raise SubmissionError, result.errors.full_messages unless result.success?
       if result.post
         receipt.update!(post_id: result.post.id, original_topic_id: result.post.topic_id, state: 'published')
