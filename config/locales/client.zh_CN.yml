@@ -1,0 +1,71 @@
+zh_CN:
+  js:
+    blackroom_learning:
+      title: 学习打卡
+      subtitle: 把公开的目标，变成每天看得见的学习记录。
+      navigation: 学习导航
+      all_goals: 全部目标
+      flag_hall: Flag 大厅
+      refresh: 刷新进度
+      timezone_notice: 按北京时间 Asia/Shanghai（UTC+08:00）计算自然日。今天：%{today}。
+      summary: 学习摘要
+      real_days: 个真实学习日
+      streak_label: 当前连续 %{current} 天 · 最长连续 %{longest} 天
+      set_goal: 立一个学习 Flag
+      one_goal_notice: 当前只能同时进行一个目标；完成或结束后，可以开启下一个。
+      my_goals: 我的近期目标
+      goal_gallery: 目标广场
+      empty: 此页面暂时没有可查看的目标。
+      load_more: 加载更多
+      request_failed: 未能确认请求结果。请先保持内容不变重试，或刷新检查是否已经提交。
+      confirm_end: 确定结束这个目标吗？已有学习记录和有效天数会保留；结束后不能重启或缩短原计划。
+      today_record: 今日学习记录
+      pending_checkin: 已提交审核。通过前不会增加打卡天数或经验值。
+      checkin_saved: 学习话题已发布。每个目标每天最多计 1 天，每位成员每天最多获得一份基础经验。
+      checkin_for: 为「%{name}」打卡
+      checkin_rules: 发布与你的目标关联的学习话题。回复、编辑旧帖和同日多次发帖，不会额外增加天数。
+      post_title: 话题标题
+      post_body: 今天的学习内容与收获
+      markdown_hint: 支持 Markdown。本开发版表单尚未接入原生上传选择器，请勿粘贴机密附件链接。
+      publish_checkin: 发布学习话题
+      saving: 正在提交…
+      pending_goal: 你的 Flag 正在审核中。通过后即可开始打卡。
+      goal_saved: 你的 Flag 已发布。
+      goal_rules: 目标为 1–366 个真实学习日，首尾包含在内的计划区间最多 366 天。提交后日期和目标天数固定。进度表示计划执行情况，不代表知识掌握程度。
+      goal_name: 目标名称
+      commitment: 每日学习约定
+      starts_on: 开始日期
+      target_days: 需要完成的学习天数
+      ends_on: 截止日期（包含当天）
+      publish_goal: 发布我的 Flag
+      progress_label: 计划执行进度：%{days}/%{target} 天（%{percent}%）
+      pending_count: 等待审核的打卡记录：%{count} 篇
+      go_checkin: 去打卡
+      original_flag: 查看原始 Flag
+      end_goal: 结束目标
+      history: 打卡日历与学习记录
+      learning_calendar: 学习日历
+      history_limit: 日历显示计划内的全部有效日期；下方仅列出最近 50 篇可查看的学习话题。
+      profile_progress: 查看学习目标与进度
+      flag_intro: 在这里设定目标，再发布关联学习话题推进进度。
+      flag_latest: 近期目标
+      status:
+        active: 进行中
+        scheduled: 尚未开始
+        completed: 已完成
+        ended: 已结束
+        cancelled: 已主动结束
+        awaiting_approval: Flag 待审核
+        rejected: Flag 未通过审核
+        unavailable: Flag 暂不可用
+      achievements:
+        first_checkin: 首次打卡
+        streak_7: 连续学习 7 天
+        total_30: 累计学习 30 天
+        goal_complete: 目标完成
+      calendar:
+        open: 尚无有效打卡
+        future: 未来日期
+        complete: 已打卡
+      flag_panel_title: 学习 Flag 与进度
+      view_user_progress: 查看学习目标与进度

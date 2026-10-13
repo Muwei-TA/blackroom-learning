@@ -1,0 +1,74 @@
+
+> blackroom-learning-dev@0.1.0-dev test
+> node --test test/js/*.test.mjs
+
+TAP version 13
+# Subtest: 30 inclusive learning days end on the 30th day
+ok 1 - 30 inclusive learning days end on the 30th day
+  ---
+  duration_ms: 2.198695
+  type: 'test'
+  ...
+# Subtest: one day begins and ends on the same date
+ok 2 - one day begins and ends on the same date
+  ---
+  duration_ms: 0.197677
+  type: 'test'
+  ...
+# Subtest: calendar arithmetic handles leap years without local timezone drift
+ok 3 - calendar arithmetic handles leap years without local timezone drift
+  ---
+  duration_ms: 0.095463
+  type: 'test'
+  ...
+# Subtest: invalid dates and counts are rejected
+ok 4 - invalid dates and counts are rejected
+  ---
+  duration_ms: 0.171528
+  type: 'test'
+  ...
+# Subtest: calendar distinguishes checked, uncompleted and future days
+ok 5 - calendar distinguishes checked, uncompleted and future days
+  ---
+  duration_ms: 0.960765
+  type: 'test'
+  ...
+# Subtest: unbounded and reversed calendar ranges are rejected
+ok 6 - unbounded and reversed calendar ranges are rejected
+  ---
+  duration_ms: 0.120661
+  type: 'test'
+  ...
+# Subtest: goal links encode the identifier
+ok 7 - goal links encode the identifier
+  ---
+  duration_ms: 0.301523
+  type: 'test'
+  ...
+# Subtest: profile links cannot inject additional query arguments
+ok 8 - profile links cannot inject additional query arguments
+  ---
+  duration_ms: 0.099109
+  type: 'test'
+  ...
+# Subtest: request tokens have UUID shape
+ok 9 - request tokens have UUID shape
+  ---
+  duration_ms: 2.619217
+  type: 'test'
+  ...
+# Subtest: error extraction handles validation and network errors
+ok 10 - error extraction handles validation and network errors
+  ---
+  duration_ms: 0.417168
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 69.283041

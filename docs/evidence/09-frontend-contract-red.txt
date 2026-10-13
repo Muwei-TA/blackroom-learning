@@ -1,0 +1,27 @@
+Run options: --seed 23506
+
+# Running:
+
+FFFF
+
+Finished in 0.003966s, 1008.6896 runs/s, 1260.8620 assertions/s.
+
+  1) Failure:
+FrontendContractTest#test_error_codes_and_setting_descriptions_are_translated [test/unit/frontend_contract_test.rb:11]:
+Missing translation file: /mnt/data/blackroom-dev/blackroom-learning/config/locales/server.en.yml
+
+  2) Failure:
+FrontendContractTest#test_route_template_uses_verified_controller_model_contract [test/unit/frontend_contract_test.rb:24]:
+Expected "import LearningDashboard from \"../components/learning-dashboard\";\n\nconst LearningTemplate = <template>\n  <LearningDashboard @model={{@model}} />\n</template>;\nexport default LearningTemplate;\n" to include # encoding: UTF-8
+#    valid: true
+"@model={{@controller.model}}".
+
+  3) Failure:
+FrontendContractTest#test_all_literal_client_keys_and_dynamic_enums_are_translated [test/unit/frontend_contract_test.rb:11]:
+Missing translation file: /mnt/data/blackroom-dev/blackroom-learning/config/locales/client.en.yml
+
+  4) Failure:
+FrontendContractTest#test_locales_have_identical_keys_and_interpolation_parameters [test/unit/frontend_contract_test.rb:11]:
+Missing translation file: /mnt/data/blackroom-dev/blackroom-learning/config/locales/server.en.yml
+
+4 runs, 5 assertions, 4 failures, 0 errors, 0 skips

@@ -1,0 +1,28 @@
+Run options: --seed 65328
+
+# Running:
+
+....F.F....
+
+Finished in 0.005868s, 1874.4455 runs/s, 2385.6580 assertions/s.
+
+  1) Failure:
+RequestRulesTest#test_missing_goal_fields_are_a_validation_error_not_a_server_exception [test/unit/request_rules_test.rb:8]:
+[BlackroomLearning::RuleError] exception expected, not
+Class: <ArgumentError>
+Message: <"missing keywords: :name, :commitment, :starts_on, :ends_on, :target_days">
+---Backtrace---
+/mnt/data/blackroom-dev/blackroom-learning/lib/blackroom_learning/policy.rb:41:in `validate_goal!'
+test/unit/request_rules_test.rb:9:in `block in test_missing_goal_fields_are_a_validation_error_not_a_server_exception'
+---------------
+
+  2) Failure:
+RequestRulesTest#test_missing_checkin_fields_can_reach_validation [test/unit/request_rules_test.rb:15]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-[:user, :guardian]
++[:user, :guardian, :goal_id, :title, :raw, :request_key]
+
+
+11 runs, 14 assertions, 2 failures, 0 errors, 0 skips

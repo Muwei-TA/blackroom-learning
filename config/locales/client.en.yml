@@ -1,0 +1,74 @@
+en:
+  js:
+    blackroom_learning:
+      title: Learning check-ins
+      subtitle: Turn a public commitment into a record of real learning days.
+      navigation: Learning navigation
+      all_goals: All goals
+      flag_hall: Flag hall
+      refresh: Refresh progress
+      timezone_notice: 'Days use Asia/Shanghai (UTC+08:00). Today: %{today}.'
+      summary: Learning summary
+      real_days: actual learning days
+      streak_label: 'Current streak: %{current} days · Best: %{longest} days'
+      set_goal: Set a learning goal
+      one_goal_notice: Finish or end your current goal before starting another.
+      my_goals: My recent goals
+      goal_gallery: Goal gallery
+      empty: No visible goals in this view.
+      load_more: Load more
+      request_failed: The request could not be confirmed. Retry without changing its content, or refresh to check the result.
+      confirm_end: End this goal? Existing learning records and earned days are kept. The goal cannot be restarted or shortened.
+      today_record: Today's learning record
+      pending_checkin: Submitted for review. No learning day or XP is credited until approval.
+      checkin_saved: Learning topic published. A goal counts once per day; daily XP is credited once per member.
+      checkin_for: 'Check in: %{name}'
+      checkin_rules: Publish your own learning topic linked to this goal. Replies, edits and extra same-day topics do not
+        add extra days.
+      post_title: Topic title
+      post_body: What you studied and learned
+      markdown_hint: Markdown is supported. This development form has no native upload picker; do not paste confidential upload
+        links.
+      publish_checkin: Publish learning topic
+      saving: Submitting…
+      pending_goal: Your Flag is awaiting review. Start checking in after it is approved.
+      goal_saved: Your Flag has been published.
+      goal_rules: Choose 1–366 real learning days within an inclusive window of at most 366 days. Dates and target days are
+        fixed after submission. Progress measures execution, not mastery.
+      goal_name: Goal name
+      commitment: Your daily learning commitment
+      starts_on: Start date
+      target_days: Required learning days
+      ends_on: Deadline (inclusive)
+      publish_goal: Publish my Flag
+      progress_label: 'Execution progress: %{days}/%{target} days (%{percent}%)'
+      pending_count: 'Check-ins awaiting review: %{count}'
+      go_checkin: Check in today
+      original_flag: Original Flag
+      end_goal: End this goal
+      history: Calendar and learning records
+      learning_calendar: Learning calendar
+      history_limit: The calendar includes every valid day in the plan. The list shows the latest 50 visible learning topics.
+      profile_progress: View learning goals and progress
+      flag_intro: Set your goal here and publish linked learning topics to advance it.
+      flag_latest: Recent goals
+      status:
+        active: In progress
+        scheduled: Not started
+        completed: Completed
+        ended: Deadline reached
+        cancelled: Ended by member
+        awaiting_approval: Flag awaiting review
+        rejected: Flag not approved
+        unavailable: Flag unavailable
+      achievements:
+        first_checkin: First learning day
+        streak_7: 7-day streak
+        total_30: 30 learning days
+        goal_complete: Goal completed
+      calendar:
+        open: No valid check-in
+        future: Future date
+        complete: Checked in
+      flag_panel_title: Learning Flags and progress
+      view_user_progress: View learning goals and progress

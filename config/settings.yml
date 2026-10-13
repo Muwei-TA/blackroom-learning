@@ -1,0 +1,27 @@
+plugins:
+  blackroom_learning_enabled:
+    default: false
+    client: true
+  blackroom_learning_category_id:
+    default: 0
+    min: 0
+    client: true
+  blackroom_learning_flag_topic_id:
+    default: 0
+    min: 0
+    client: true
+  blackroom_learning_excluded_usernames:
+    default: "discobot|system|blackroom_update_bot"
+    type: list
+  blackroom_learning_first_checkin_badge_id:
+    default: 0
+    min: 0
+  blackroom_learning_streak_7_badge_id:
+    default: 0
+    min: 0
+  blackroom_learning_total_30_badge_id:
+    default: 0
+    min: 0
+  blackroom_learning_goal_complete_badge_id:
+    default: 0
+    min: 0

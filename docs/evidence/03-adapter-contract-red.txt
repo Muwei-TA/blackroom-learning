@@ -1,0 +1,41 @@
+Run options: --seed 64608
+
+# Running:
+
+FFFFFFFF
+
+Finished in 0.000812s, 9855.7367 runs/s, 9855.7367 assertions/s.
+
+  1) Failure:
+PackageContractTest#test_controller_checks_login_permission_and_rate_limits [test/unit/package_contract_test.rb:11]:
+Missing package file: app/controllers/blackroom_learning/learning_controller.rb
+
+  2) Failure:
+PackageContractTest#test_safe_defaults [test/unit/package_contract_test.rb:11]:
+Missing package file: config/settings.yml
+
+  3) Failure:
+PackageContractTest#test_submissions_use_review_pipeline_without_bypass [test/unit/package_contract_test.rb:11]:
+Missing package file: app/services/blackroom_learning/submissions.rb
+
+  4) Failure:
+PackageContractTest#test_reconcile_serializes_ledger_changes [test/unit/package_contract_test.rb:11]:
+Missing package file: app/services/blackroom_learning/reconcile_user.rb
+
+  5) Failure:
+PackageContractTest#test_events_are_after_commit_and_have_repair_job [test/unit/package_contract_test.rb:11]:
+Missing package file: lib/blackroom_learning/callbacks.rb
+
+  6) Failure:
+PackageContractTest#test_schema_contains_independent_deduplication_constraints [test/unit/package_contract_test.rb:11]:
+Missing package file: db/migrate/20261013000000_create_blackroom_learning.rb
+
+  7) Failure:
+PackageContractTest#test_presenter_has_audience_checks [test/unit/package_contract_test.rb:11]:
+Missing package file: app/services/blackroom_learning/presenter.rb
+
+  8) Failure:
+PackageContractTest#test_native_awards_do_not_revoke_unowned_badges [test/unit/package_contract_test.rb:11]:
+Missing package file: app/services/blackroom_learning/native_awards.rb
+
+8 runs, 8 assertions, 8 failures, 0 errors, 0 skips

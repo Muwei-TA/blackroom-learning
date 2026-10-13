@@ -1,0 +1,8 @@
+{
+  "name": "blackroom-learning-dev",
+  "version": "0.1.0-dev",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test test/js/*.test.mjs" },
+  "engines": { "node": ">=22" }
+}

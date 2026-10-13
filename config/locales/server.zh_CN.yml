@@ -1,0 +1,40 @@
+zh_CN:
+  site_settings:
+    blackroom_learning_enabled: 启用学习打卡开发版插件。隔离环境集成验收通过前请保持关闭。
+    blackroom_learning_category_id: 学习分区 ID，0 表示未配置。有进行中目标时不要随意更换。
+    blackroom_learning_flag_topic_id: 学习分区内公共 Flag 话题的 ID，0 表示未配置。
+    blackroom_learning_excluded_usernames: 排除参与学习及奖励的账号，以 | 分隔。
+    blackroom_learning_first_checkin_badge_id: 「首次打卡」对应的可选原生专用徽章 ID，0 表示不桥接；只支持不可作头衔的手动徽章。
+    blackroom_learning_streak_7_badge_id: 「连续学习 7 天」对应的可选原生专用徽章 ID，0 表示不桥接；只支持不可作头衔的手动徽章。
+    blackroom_learning_total_30_badge_id: 「累计学习 30 天」对应的可选原生专用徽章 ID，0 表示不桥接；只支持不可作头衔的手动徽章。
+    blackroom_learning_goal_complete_badge_id: 「目标完成」对应的可选原生专用徽章 ID，0 表示不桥接；只支持不可作头衔的手动徽章。
+  blackroom_learning:
+    flag_body: '## 我的学习 Flag：%{name}
+
+
+      每日学习约定：%{commitment}
+
+
+      计划时间：%{starts_on} — %{ends_on}（包含首尾两天）
+
+
+      目标：完成 %{target_days} 个真实学习日。进度表示计划执行情况，不代表知识掌握程度。'
+    view_progress: 查看学习进度
+    errors:
+      invalid_request: 请求无效，请检查填写内容。
+      invalid_request_key: 缺少有效的提交编号，请重新打开表单。
+      request_conflict: 此提交编号已用于不同内容。请先刷新确认原请求的结果，再重新填写表单。
+      invalid_date: 请填写有效日期，格式为 YYYY-MM-DD。
+      invalid_target_days: 学习天数必须是 1–366 之间的整数。
+      invalid_name: 目标名称需为 2–120 个字符。
+      invalid_commitment: 每日学习约定需为 8–2000 个字符。
+      start_in_past: 开始日期不能早于北京时间的今天。
+      invalid_window: 计划首尾相隔区间需为 1–366 天，且不能少于需要完成的学习天数。
+      invalid_timestamp: 内部时间记录无效。
+      not_configured: 学习板块尚未配置有效的分区及 Flag 话题。
+      active_goal_exists: 你已经有一个进行中、尚未开始或待审核的目标。
+      goal_not_active: 当前目标暂时不能接收打卡。
+      invalid_post: 请填写有效标题和学习记录，并遵守长度限制。
+      goal_already_ended: 这个目标已经结束。
+      post_rejected: 论坛未接受此次提交，请检查提示内容。
+      unexpected_post_result: 论坛返回了无法识别的结果，本次学习记录未被记入。

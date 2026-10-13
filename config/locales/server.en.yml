@@ -1,0 +1,45 @@
+en:
+  site_settings:
+    blackroom_learning_enabled: Enable the learning development plugin. Keep OFF until isolated integration tests pass.
+    blackroom_learning_category_id: Learning category ID; 0 means unconfigured. Do not repoint a running cohort.
+    blackroom_learning_flag_topic_id: Shared Flag topic ID in the learning category; 0 means unconfigured.
+    blackroom_learning_excluded_usernames: Accounts excluded from learning and rewards; use | separators.
+    blackroom_learning_first_checkin_badge_id: Optional dedicated native badge ID for First learning day; 0 disables the bridge.
+      Only non-title, manual badges are eligible.
+    blackroom_learning_streak_7_badge_id: Optional dedicated native badge ID for 7-day streak; 0 disables the bridge. Only
+      non-title, manual badges are eligible.
+    blackroom_learning_total_30_badge_id: Optional dedicated native badge ID for 30 learning days; 0 disables the bridge.
+      Only non-title, manual badges are eligible.
+    blackroom_learning_goal_complete_badge_id: Optional dedicated native badge ID for Goal completed; 0 disables the bridge.
+      Only non-title, manual badges are eligible.
+  blackroom_learning:
+    flag_body: '## My learning Flag: %{name}
+
+
+      Daily commitment: %{commitment}
+
+
+      Plan: %{starts_on} — %{ends_on} (inclusive)
+
+
+      Required real learning days: %{target_days}. Progress measures execution, not mastery.'
+    view_progress: View learning progress
+    errors:
+      invalid_request: The request is invalid.
+      invalid_request_key: A valid submission ID is required. Reload this form.
+      request_conflict: This submission ID belongs to different content. Refresh to check the original result before starting
+        another submission.
+      invalid_date: Use a valid date in YYYY-MM-DD format.
+      invalid_target_days: Learning days must be an integer between 1 and 366.
+      invalid_name: Goal name must contain 2–120 characters.
+      invalid_commitment: Daily commitment must contain 8–2000 characters.
+      start_in_past: Start date cannot be earlier than today in Asia/Shanghai.
+      invalid_window: The inclusive window must be 1–366 days and at least as long as the required learning days.
+      invalid_timestamp: An internal timestamp is invalid.
+      not_configured: Learning is not configured with a valid category and Flag topic.
+      active_goal_exists: You already have an ongoing or pending goal.
+      goal_not_active: This goal cannot accept a check-in now.
+      invalid_post: Provide a valid title and learning record within the length limits.
+      goal_already_ended: This goal has already ended.
+      post_rejected: The forum did not accept this submission.
+      unexpected_post_result: The forum returned an unexpected result. No learning entry was committed.

@@ -1,0 +1,18 @@
+Run options: --seed 55487
+
+# Running:
+
+F..F.
+
+Finished in 0.001643s, 3043.2692 runs/s, 4260.5769 assertions/s.
+
+  1) Failure:
+LifecycleTest#test_finished_goal_does_not_take_a_second_active_slot_after_reversal [test/unit/lifecycle_test.rb:27]:
+Expected true to not be truthy.
+
+  2) Failure:
+LifecycleTest#test_revoked_completion_does_not_reopen_a_finished_goal [test/unit/lifecycle_test.rb:23]:
+Expected: "ended"
+  Actual: "active"
+
+5 runs, 7 assertions, 2 failures, 0 errors, 0 skips

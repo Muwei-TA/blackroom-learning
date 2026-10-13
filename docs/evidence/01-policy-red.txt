@@ -1,0 +1,249 @@
+Run options: --seed 26838
+
+# Running:
+
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+Finished in 0.001147s, 52318.4028 runs/s, 52318.4028 assertions/s.
+
+  1) Failure:
+PolicyTest#test_valid_source [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+  2) Failure:
+PolicyTest#test_achievements_follow_real_records [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+  3) Failure:
+PolicyTest#test_midnight_uses_shanghai_not_utc [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+  4) Failure:
+PolicyTest#test_empty_progress [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+  5) Failure:
+PolicyTest#test_excludes_future_submission [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+  6) Failure:
+PolicyTest#test_progress_12_out_of_30_is_40_percent [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+  7) Failure:
+PolicyTest#test_excludes_moved_post [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+  8) Failure:
+PolicyTest#test_cancellation_preserves_earlier_submissions [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+  9) Failure:
+PolicyTest#test_reconciliation_corrects_duplicate_old_credit [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 10) Failure:
+PolicyTest#test_rejects_negative_days [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 11) Failure:
+PolicyTest#test_excludes_private_message [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 12) Failure:
+PolicyTest#test_progress_rejects_zero_divisor [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 13) Failure:
+PolicyTest#test_rejects_missing_days [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 14) Failure:
+PolicyTest#test_rejects_zero_days [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 15) Failure:
+PolicyTest#test_reward_reversal_and_restore [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 16) Failure:
+PolicyTest#test_rejects_huge_commitment [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 17) Failure:
+PolicyTest#test_progress_deduplicates_and_caps_percentage_not_history [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 18) Failure:
+PolicyTest#test_rejects_tiny_commitment [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 19) Failure:
+PolicyTest#test_after_deadline_excluded [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 20) Failure:
+PolicyTest#test_excludes_empty_raw [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 21) Failure:
+PolicyTest#test_expired_goal_keeps_prior_valid_submission [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 22) Failure:
+PolicyTest#test_excludes_system_post [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 23) Failure:
+PolicyTest#test_excludes_deleted_topic [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 24) Failure:
+PolicyTest#test_deleting_one_source_preserves_day_until_all_invalid [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 25) Failure:
+PolicyTest#test_learning_levels [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 26) Failure:
+PolicyTest#test_rejects_datetime_as_date [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 27) Failure:
+PolicyTest#test_excludes_before_start [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 28) Failure:
+PolicyTest#test_excludes_bot [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 29) Failure:
+PolicyTest#test_rejects_days_longer_than_window [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 30) Failure:
+PolicyTest#test_rejects_reverse_window [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 31) Failure:
+PolicyTest#test_excludes_reply [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 32) Failure:
+PolicyTest#test_rejects_many_days [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 33) Failure:
+PolicyTest#test_excludes_wrong_category [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 34) Failure:
+PolicyTest#test_normalizes_goal_and_keeps_inclusive_window [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 35) Failure:
+PolicyTest#test_excludes_unlisted_topic [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 36) Failure:
+PolicyTest#test_rejects_past_start [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 37) Failure:
+PolicyTest#test_rejects_huge_name [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 38) Failure:
+PolicyTest#test_excludes_wrong_author [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 39) Failure:
+PolicyTest#test_excludes_deleted_post [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 40) Failure:
+PolicyTest#test_timezone_offset_equivalence [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 41) Failure:
+PolicyTest#test_strips_names [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 42) Failure:
+PolicyTest#test_rejects_exponent_days [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 43) Failure:
+PolicyTest#test_rejects_bad_date [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 44) Failure:
+PolicyTest#test_rejects_missing_name [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 45) Failure:
+PolicyTest#test_reward_is_user_day_based_and_idempotent [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 46) Failure:
+PolicyTest#test_excludes_hidden_post [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 47) Failure:
+PolicyTest#test_single_day_goal [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 48) Failure:
+PolicyTest#test_longest_streak_handles_gap_duplicates_and_future [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 49) Failure:
+PolicyTest#test_rejects_loose_date [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 50) Failure:
+PolicyTest#test_excludes_queue [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 51) Failure:
+PolicyTest#test_timestamp_must_be_a_server_time_object [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 52) Failure:
+PolicyTest#test_multiple_sources_same_day_count_once [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 53) Failure:
+PolicyTest#test_rejects_float_days [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 54) Failure:
+PolicyTest#test_rejects_too_long_window [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 55) Failure:
+PolicyTest#test_approval_time_does_not_move_submission_date [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 56) Failure:
+PolicyTest#test_hidden_flag_cannot_generate_progress [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 57) Failure:
+PolicyTest#test_broken_streak [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 58) Failure:
+PolicyTest#test_buffer_window_allowed [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 59) Failure:
+PolicyTest#test_rejects_trailing_digits [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+ 60) Failure:
+PolicyTest#test_current_streak_does_not_break_before_today_ends [test/unit/policy_test.rb:9]:
+Missing learning policy implementation
+
+60 runs, 60 assertions, 60 failures, 0 errors, 0 skips

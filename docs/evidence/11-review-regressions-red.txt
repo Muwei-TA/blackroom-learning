@@ -1,0 +1,17 @@
+Run options: --seed 37454
+
+# Running:
+
+..FF.
+
+Finished in 0.005962s, 838.7093 runs/s, 62399.9734 assertions/s.
+
+  1) Failure:
+FrontendContractTest#test_all_literal_client_keys_and_dynamic_enums_are_translated [test/unit/frontend_contract_test.rb:52]:
+Missing key blackroom_learning.calendar.complete
+
+  2) Failure:
+FrontendContractTest#test_submission_token_errors_are_caught_without_leaving_the_form_busy [test/unit/frontend_contract_test.rb:25]:
+Expected 1395 to be < 1355.
+
+5 runs, 372 assertions, 2 failures, 0 errors, 0 skips

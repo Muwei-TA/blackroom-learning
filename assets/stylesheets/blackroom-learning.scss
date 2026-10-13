@@ -1,0 +1,47 @@
+.bl-learning, .bl-flag-panel {
+  --bl-radius: 0.65rem;
+  color: var(--primary);
+  h1, h2, h3 { line-height: 1.35; }
+  h2 { margin: 1.4rem 0 0.8rem; }
+  section { margin-bottom: 1.5rem; }
+}
+.bl-learning { max-width: 1080px; margin: 1.5rem auto 3rem; }
+.bl-page-heading { display: flex; justify-content: space-between; align-items: start; gap: 1rem; }
+.bl-page-heading nav, .bl-card-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: center; }
+.bl-hint, .bl-date-range, .bl-member { color: var(--primary-medium); font-size: 0.9em; }
+.bl-summary, .bl-flag-panel { background: var(--primary-very-low); padding: 1rem 1.25rem; border-radius: var(--bl-radius, 0.65rem); }
+.bl-summary h2 { margin: 0 0 0.5rem; }
+.bl-achievements { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.bl-achievements span { border: 1px solid var(--primary-low-mid); border-radius: 1rem; padding: 0.25rem 0.7rem; }
+.bl-goal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: 1rem; }
+.bl-goal-card { border: 1px solid var(--primary-low); border-radius: var(--bl-radius, 0.65rem); padding: 1rem; min-width: 0; overflow-wrap: anywhere; }
+.bl-card-heading { display: flex; gap: 0.8rem; justify-content: space-between; align-items: start; }
+.bl-card-heading h3 { margin: 0 0 0.45rem; }
+.bl-state { flex-shrink: 0; font-size: 0.8em; border: 1px solid var(--primary-low); border-radius: 0.3rem; padding: 0.2rem 0.35rem; }
+.bl-commitment { white-space: pre-wrap; }
+.bl-goal-card progress { width: 100%; height: 1rem; accent-color: var(--tertiary); }
+.bl-progress-text { font-weight: 600; margin-top: 0.4rem; }
+.bl-form { max-width: 760px; margin: 1rem 0; }
+.bl-form fieldset { border: 0; padding: 0; min-width: 0; }
+.bl-form label { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+.bl-form input, .bl-form textarea { width: 100%; box-sizing: border-box; }
+.bl-form textarea { resize: vertical; }
+.bl-form-dates { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.8rem; }
+.bl-checkin-form { border: 2px solid var(--tertiary); border-radius: var(--bl-radius); padding: 1rem; }
+.bl-error { color: var(--danger); border-left: 3px solid var(--danger); padding: 0.7rem; }
+.bl-history { margin-top: 1rem; }
+.bl-history summary, .bl-flag-panel summary { cursor: pointer; min-height: 2.5rem; display: flex; align-items: center; }
+.bl-calendar { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.3rem; }
+.bl-calendar li { padding: 0.3rem 0; border: 1px solid var(--primary-low); text-align: center; font-size: 0.78em; border-radius: 0.2rem; }
+.bl-calendar li[data-state="complete"] { background: var(--tertiary-low); border-color: var(--tertiary); font-weight: 700; }
+.bl-calendar li[data-state="complete"]::after { content: " ✓"; }
+.bl-calendar li[data-state="future"] { border-style: dashed; color: var(--primary-medium); }
+.bl-records { padding-left: 1.2rem; }
+.bl-records li { margin-bottom: 0.6rem; }
+@media (width <= 600px) {
+  .bl-learning { margin: 0.8rem 0.5rem 2rem; }
+  .bl-page-heading { flex-direction: column; }
+  .bl-form-dates { grid-template-columns: 1fr; gap: 0; }
+  .bl-card-actions .btn { min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) { .bl-learning *, .bl-flag-panel * { scroll-behavior: auto; } }
