@@ -10,7 +10,7 @@ export default class LearningRoute extends DiscourseRoute {
     const query = {};
     if (params.username) { query.username = params.username; }
     if (params.goal_id) { query.goal_id = params.goal_id; }
-    const data = await ajax("/learning/data.json", { data: query });
+    const data = await ajax("/learning/data.json", { ignoreUnsent: false, data: query });
     return { ...data, query };
   }
 }

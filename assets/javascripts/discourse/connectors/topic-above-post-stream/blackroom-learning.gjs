@@ -29,7 +29,7 @@ export default class LearningFlagPanel extends Component {
     if (!this.isFlag || this.busy) { return; }
     this.busy = true;
     try {
-      const data = await ajax("/learning/data.json");
+      const data = await ajax("/learning/data.json", { ignoreUnsent: false });
       if (!this.isDestroying && !this.isDestroyed && this.isFlag) { this.data = data; this.error = ""; }
     } catch {
       if (!this.isDestroying && !this.isDestroyed) { this.error = i18n("blackroom_learning.request_failed"); }

@@ -28,7 +28,7 @@ export default class LearningCheckinForm extends Component {
     this.busy = true; this.error = ""; this.message = "";
     try {
       this.requestKey ??= requestToken();
-      const result = await ajax("/learning/checkins.json", { type: "POST", data: {
+      const result = await ajax("/learning/checkins.json", { type: "POST", ignoreUnsent: false, data: {
         goal_id: this.args.goal.id, title: this.title, raw: this.raw, request_key: this.requestKey,
         typing_duration_msecs: Math.floor(performance.now() - (this.firstInputAt ?? performance.now())),
         composer_open_duration_msecs: Math.floor(performance.now() - this.openedAt),

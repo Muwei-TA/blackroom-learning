@@ -33,7 +33,7 @@ export default class LearningDashboard extends Component {
     const model = this.args.model;
     try {
       const query = model.query || {};
-      const result = await ajax("/learning/data.json", { data: query });
+      const result = await ajax("/learning/data.json", { ignoreUnsent: false, data: query });
       if (!this.isDestroying && !this.isDestroyed && this.args.model === model) {
         this.overrideFor = model; this.override = { ...result, query };
       }
@@ -48,7 +48,7 @@ export default class LearningDashboard extends Component {
     this.busy = true; this.error = "";
     const model = this.args.model, previous = this.data;
     try {
-      const result = await ajax("/learning/data.json", { data: { ...(model.query || {}), page: previous.next_page } });
+      const result = await ajax("/learning/data.json", { ignoreUnsent: false, data: { ...(model.query || {}), page: previous.next_page } });
       if (!this.isDestroying && !this.isDestroyed && this.args.model === model) {
         const goals = [...new Map([...previous.goals, ...result.goals].map((goal) => [goal.id, goal])).values()];
         this.overrideFor = model; this.override = { ...previous, goals, next_page: result.next_page };
@@ -62,7 +62,7 @@ export default class LearningDashboard extends Component {
   @action async cancelGoal(goal) {
     if (this.busy || !window.confirm(i18n("blackroom_learning.confirm_end"))) { return; }
     this.busy = true; this.error = "";
-    try { await ajax(`/learning/goals/${goal.id}/cancel.json`, { type: "POST" }); }
+    try { await ajax(`/learning/goals/${goal.id}/cancel.json`, { type: "POST", ignoreUnsent: false }); }
     catch (error) { if (!this.isDestroying && !this.isDestroyed) { this.error = errorText(error, i18n("blackroom_learning.request_failed")); } }
     finally { if (!this.isDestroying && !this.isDestroyed) { this.busy = false; } }
     if (!this.isDestroying && !this.isDestroyed && !this.error) { await this.refresh(); }

@@ -41,6 +41,7 @@ export default class LearningGoalForm extends Component {
       this.requestKey ??= requestToken();
       const result = await ajax("/learning/goals.json", {
         type: "POST",
+        ignoreUnsent: false,
         data: { name: this.name, commitment: this.commitment, starts_on: this.startsOn,
           ends_on: this.endsOn, target_days: this.targetDays, request_key: this.requestKey,
           typing_duration_msecs: Math.floor(performance.now() - (this.firstInputAt ?? performance.now())),
